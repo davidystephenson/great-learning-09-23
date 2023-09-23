@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body>
+    <a href="hello.html" id="special">Hello</a>
+    <a href="../table.html">Table link 1</a>
+    <div class="form-container">
+      <form action="/submit-form" method='post'>
+        <div>
+          <label>
+            Email
+            <input type="email" name="newuseremail" required/>
+          </label>
+        </div>
+        <div>
+          <label>
+            Username
+            <input type="text" name="username" class="redtext bluetext">
+          </label>
+        </div>
+        <div>
+          <textarea name="text" class="redtext" required>abc</textarea>
+        </div>
+        <div>
+          <select name="select" class="redtext"> 
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+          </select>
+        </div>
+        <!--
+        <div>
+          <button class="redtext" formnovalidate>Submit</button>
+        </div>
+        -->
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    <a href="../table.html">Table link 2</a>
+    <a href="http://google.com">Google</a>
+  </body>
+</html>
